@@ -10,6 +10,7 @@ func DefaultSuite() []endpoint.Callable {
 	HUNDRED := uint64(100)
 	ONE := uint64(1)
 
+	accountCheck := solana.MustPublicKeyFromBase58("7Np41oeYqPefeNQEHSv1UDhYrehxin3NStELsSKCT4K2")
 	historicalSig := solana.MustSignatureFromBase58("4QKAYZmXF8aNdECfHMkjw1nEsJSkPcPki4o1CBpmw4ZTHjc2BH1ghmPYuRENry4M833rCwz2VDFUu61hhPBVZiSL")
 
 	return []endpoint.Callable{
@@ -17,5 +18,6 @@ func DefaultSuite() []endpoint.Callable {
 		endpoint.NewGetMultipleAccounts([]solana.PublicKey{solana.TokenProgramID}, nil),
 		endpoint.NewGetProgramAccounts(solana.StakeProgramID, &rpc.GetProgramAccountsOpts{DataSlice: &rpc.DataSlice{Length: &HUNDRED}}),
 		endpoint.NewGetTransaction(historicalSig, &rpc.GetTransactionOpts{MaxSupportedTransactionVersion: &ONE}),
+		endpoint.NewGetAccountInfo(accountCheck, nil),
 	}
 }
