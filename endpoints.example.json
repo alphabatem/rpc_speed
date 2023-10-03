@@ -1,0 +1,30 @@
+[
+  {
+	"name": "HelloMoon",
+	"url": "https://global.rpc.hellomoon.io/"
+  },
+  {
+	"name": "Helius",
+	"url": "https://rpc.helius.xyz/?api-key="
+  },
+  {
+	"name": "QuickNode",
+	"url": "https://alphabetical-rpc-name.solana-mainnet.quiknode.pro/"
+  },
+  {
+	"name": "ExtrNode",
+	"url": "https://solana-mainnet.rpc.extrnode.com/"
+  },
+  {
+	"name": "Alchemy",
+	"url": "https://solana-mainnet.g.alchemy.com/v2"
+  },
+  {
+	"name": "Trition_One",
+	"url": "https://alphabat-mainf69-596d.mainnet.rpcpool.com/"
+  },
+  {
+	"name": "Solana_Mainnet",
+	"url": "https://api.mainnet-beta.solana.com/"
+  }
+]
